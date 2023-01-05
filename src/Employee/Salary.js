@@ -19,7 +19,7 @@ class Salary extends React.Component {
         .then(response => {  
          this.setState({ business: response.data });  
           console.log(response.data);
-          data=response.data;
+          data=response.data;  
           data1=param.emp_id;
           debugger;  
         })  
@@ -31,7 +31,7 @@ class Salary extends React.Component {
           this.setState({ business: response.data });  
           console.log(response.data.name);
           data2=response.data.name;
-          debugger;  
+          debugger;   
         })  
         .catch(function (error) {  
           console.log(error);  
@@ -53,7 +53,7 @@ class Salary extends React.Component {
     render() {    
 
         return (    
-
+ 
             <div>  
           <h4 align="center">Salary Information</h4>  
           <table className="table table-striped" style={{ marginTop: 10}}>  
